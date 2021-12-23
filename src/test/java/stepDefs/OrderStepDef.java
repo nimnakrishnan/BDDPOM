@@ -40,6 +40,7 @@ public class OrderStepDef extends TestBase{
 		@When("Add Item to cart")
 		public void add_item_to_cart() {
 			resultPage.addToCart();
+			System.out.println("add_item_to_cart");
 		}
 		@Then("Item must be in Cart")
 		public void item_must_be_in_cart() throws InterruptedException {
